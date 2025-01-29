@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .cont{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            align-items: center;
+            margin-top: 200px;
+            margin-left: 600px;
+        }
+        #mail, #Password{
+            height: 30px;
+            width: 250px;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        button{
+            padding: 20px;
+            margin-top: 20px ;
+            margin-left: 38px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <form action="/Register" method="POST">
+            <input id="mail" type="email" placeholder="Mail Id" name="mail"><br>
+
+            <input id="Password" type="text" placeholder="Enter Password" name="Password"><br>
+
+            <button>Log In</button>
+            <button><a href="/form.html">New User</a></button>
+        </form>
+    </div>
+</body>
+</html>

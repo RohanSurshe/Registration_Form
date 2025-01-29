@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+        }
+        .cont{
+            border: 1px double red;
+            height: 450px;
+            width: 400px;
+            margin: 100px;
+            margin-left: 530px;
+        }
+        form{
+            margin: 40px;
+            line-height: 40px;
+        }
+        #name, #mail, #Password{
+            background: none;
+            width: 300px;
+            height: 20px;
+        }
+       
+        button{
+            height: 30px;
+            width: 150px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <div class="cont">
+        <form action="/Register" method="POST">
+            <label for="name">Name</label><br>
+            <input id="name" type="text"><br>
+
+            <label for="email">Email Id</label><br>
+            <input id="mail" type="text" name="mail"><br>
+
+            <label for="Password">Password</label><br>
+            <input id="Password" type="Password" name="Password"><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
